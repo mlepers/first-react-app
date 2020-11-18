@@ -1,25 +1,22 @@
-import logo from './logo.svg';
+import React, {Component, Fragment} from 'react';
 import './App.css';
+import Membre from './components/Membre';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render () {
+    return (
+      <Fragment>  
+        <div className="App">
+          <h1>React App</h1>
+        </div>
+        <Membre/>
+      </Fragment>
+
+    // React.createElement('div', {className: 'App'}, React.createElement('h1', null, 'React App'))
+    );
+  }
 }
+
+
 
 export default App;
