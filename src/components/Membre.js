@@ -7,8 +7,7 @@ import React from 'react'
 //     )
 
 
-const Membre = () => {
-    const name = "Marie"
+const Membre = ({name}) => {
     return (
     <h2>Membre de ma famille : {name.toUpperCase()}</h2>
     )
